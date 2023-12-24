@@ -1,0 +1,13 @@
+                                          Module-8 (Migration)
+
+Question - Answer :-
+
+-----------------------------------------------------------------------------------------------------
+
+Q1.> How to do config database in laravel?
+          
+Ans.To configure a database connection in Laravel, you will need to update the config/database.php file with your database credentials. First, ensure you have a database set up and have the credentials (username, password, hostname, etc.) ready. Laravel supports several database systems, including MySQL, PostgreSQL, and SQLite. Open the config/database.php file and find the connections array. This array contains all of the available connection configurations. Choose a connection type from the array (e.g., mysql, sqlite, pgsql, etc.) and update the corresponding configuration options with your database credentials. For example, to configure a MySQL database, you might update the Default Database Connection Name
+
+Open the .env file in the root directory of your Laravel project. Set the DB_CONNECTION variable in this file to match the connection type you chose in the previous step. For example, if you are using a MySQL database, you would set the DB_CONNECTION variable to mysql. Set the DB_HOST variable to the hostname of your database server. For example, if you are using a local development server, you might set this to localhost. Set the DB_DATABASE variable to the name of your database. Set the DB_USERNAME and DB_PASSWORD variables to the username and password for your database. If you are using a MySQL or PostgreSQL database, you may also need to set the DB_PORT variable in your .env file to the correct port number for your database server. If you are using a MySQL database, you may also need to set the DB_SOCKET variable in your .env file if your MySQL server uses a socket other than the default. Save the .env file and exit.
+
+Once you have configured your database connection, you can use the Laravel query builder or Eloquent ORM to perform CRUD operations on your database. For example, to retrieve all rows from a table called users, you could use the following code:

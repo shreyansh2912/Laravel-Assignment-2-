@@ -1,0 +1,89 @@
+                                          Module-7 (laravel)
+
+Question - Answer :-
+
+-----------------------------------------------------------------------------------------------------
+
+
+Q1. How to pass Multiple Variable in route?
+Ans. 
+
+     Route::get('/demo/{name}/{id}',function($name,$id){
+
+    $data = compact('name','id','demo','arr');
+      return view('demo')->with($data);
+});
+
+-----------------------------------------------------------------------------------------------------
+
+Q2.  How to pass variable which can be null in Route?
+Ans. 
+      
+     Route::get('/demo/{name}/{id?}',function($name,$id = null){
+    
+    $data = compact('name','id');
+ 
+      return view('demo')->with($data);
+});
+
+-----------------------------------------------------------------------------------------------------
+
+Q3.  How to remove route caching?
+Ans. 
+
+  We can remove route cacheing by typing 
+  
+  "php artisan route:cache" in cmd 
+            OR
+    bootstrap/cache/routes.php.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
