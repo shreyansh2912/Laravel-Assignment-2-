@@ -76,6 +76,10 @@
         font-size:60px;
         padding-top: 20px;
     }
+    .page{
+        margin-left: 100px;
+        margin-top: 0px;
+    }
 </style>
 <body>
     <div class="head">
@@ -117,5 +121,8 @@
         </tr>
         @endforeach
     </table>
+    <div class=page>
+        {{$employees->links()}}
+    </div>
 </body>
 </html>

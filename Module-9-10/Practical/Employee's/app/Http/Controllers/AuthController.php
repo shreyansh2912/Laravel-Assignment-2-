@@ -11,7 +11,7 @@ class AuthController extends Controller
         return "Hello";
     }
     public function employee(){
-        $employees = employee::all();
+        $employees = employee::paginate(10);
         return view('employee',['employees'=>$employees]);
     }
     public function insert(){
