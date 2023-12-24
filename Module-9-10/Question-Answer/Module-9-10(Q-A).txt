@@ -1,0 +1,22 @@
+
+Q1. Explain ORM ?
+
+Answer : ORM stands for Object-Relational Mapping. It is a technique that allows you to query and manipulate data from a database using an object-oriented paradigm .
+Advantages of using orm :-
+    ORM stands for Object-Relational Mapping. It is a technique that allows you to query and manipulate data from a database using an object-oriented paradigm
+
+
+Q2. Explain - Eloquent Relationships ?
+
+Answer :  Eloquent relationships are defined as methods on your Eloquent model classes. Since relationships also serve as powerful query builders, defining relationships as methods provides powerful method chaining and querying capabilities
+
+
+Q3.What is Eager Loading and lazy loading? 
+
+Answer : Eager loading and lazy loading are two techniques used in software development to optimize the performance of applications that access databases.
+
+Lazy loading is a technique that loads data from the database only when it is needed. This technique is useful when dealing with large amounts of data, as it can help reduce the amount of memory used by the application. Lazy loading is the default behavior in Entity Framework 1.
+
+Eager loading, on the other hand, is a technique that loads all the related data from the database at once, even if it is not needed. This technique is useful when you know that you will need all the related data, as it can help reduce the number of database queries and improve performance 1.
+
+In summary, lazy loading is used when you want to load data only when it is needed, while eager loading is used when you know that you will need all the related data.
