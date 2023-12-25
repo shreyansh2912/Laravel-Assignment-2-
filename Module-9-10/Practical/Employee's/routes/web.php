@@ -31,4 +31,4 @@ Route::get('/update_employee/{id}',[EmployeeController::class,'edit']);
 Route::put('/update_employee/{id}',[EmployeeController::class,'update']);
 
 Route::get('/delete_employee/{id}',[EmployeeController::class,'destroy']);
-// Route::get('/')
+// Route::get('/')a
