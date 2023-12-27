@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('employee_list');
 });
+
+Route::get('/employee_list',[AuthController::class,'show']);
+
+Route::get('/all_employee',[AuthController::class,'index']);
+
+Route::get('/employee_add',[AuthController::class,'add']);
+Route::post('/employee_add',[AuthController::class,'store']);
+
+Route::get('/employee_update/{id}',[AuthController::class,'updt']);
+Route::post('/employee_update/{id}',[AuthController::class,'update']);
+
+Route::get('/employee_delete/{id}',[AuthController::class,'destroy']);
